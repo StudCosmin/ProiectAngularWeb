@@ -1,0 +1,12 @@
+.main-div mat-card {
+  padding: 0px;
+}
+
+.login-form {
+  padding: 20px;
+}
+
+#myHeader {
+  text-align: center;
+  color: salmon;
+}

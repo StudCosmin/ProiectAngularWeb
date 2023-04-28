@@ -1,0 +1,26 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+  <mat-card fxFlex="30">
+    <mat-toolbar fxLayoutAlign="center center" color="primary">Login Page</mat-toolbar>
+    <form fxLayoutAlign="stretch" fxLayout="column" class="login-form">
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input name="myInput" matInput type="text" [(ngModel)]="emailInput">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input name="myInput "matInput type="password" [(ngModel)]="passwordInput">
+      </mat-form-field>
+
+      <button (click)="queryUser(emailInput, passwordInput) "mat-raised-button type="submit" color="primary">Login</button>
+      <br>
+      <button (click)="addUser(emailInput, passwordInput) "mat-raised-button type="submit">Sign Up</button>
+      <br>
+      <button (click)="logOut()" mat-raised-button type="submit" color="primary">Log out</button>
+    </form>
+  </mat-card>
+</div>
+
+<div div style="text-align: center; margin-top: 0px;">
+  <h1 id="myHeader">{{headerText}}</h1>
+</div>
